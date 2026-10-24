@@ -5,7 +5,7 @@
     "author": "Guilherme mesquita",
     "type": "module",
     "scripts": {
-        "dev": "node --watch ./server.ts,",
+        "dev": "node --watch ./server.ts",
         "check": "tsc"
     },
     "devDependencies": {
