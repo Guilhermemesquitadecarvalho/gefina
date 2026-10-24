@@ -5,6 +5,13 @@
     "author": "Guilherme mesquita",
     "type": "module",
     "scripts": {
-        "dev": "node --watch ./server.ts"
+        "dev": "node --watch ./server.ts,",
+        "check": "tsc"
+    },
+    "devDependencies": {
+        "@types/node": "^26.6.5"
+    },
+    "dependencies": {
+        "typescript": "^7.0.2"
     }
 }
