@@ -5,7 +5,7 @@ interface customer {
   email: string;
 }
 
-interface invoice {
+interface Invoice {
   id: number;
   amount: number;
   status: invoiceStatus;
@@ -14,7 +14,7 @@ interface invoice {
   customer: customer;
 }
 
-const invoices: invoice[] = [
+const invoices: Invoice[] = [
   {
     id: 1,
     amount: 520354,
@@ -50,10 +50,10 @@ const invoices: invoice[] = [
   }
 ];
 
-export function findManyInvoices(): invoice[] {
+export function findManyInvoices(): Invoice[] {
   return invoices;
 }
 
-export function findInvoiceById(id: number): invoice {
+export function findInvoiceById(id: number): Invoice | undefined{
   return invoices.find((invoice) => invoice.id === id);
 }
